@@ -25,8 +25,33 @@ body {
     border-radius: 15px;
 }
 
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    text-align: center;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+th {
+    border-bottom: 2px solid #000;
+}
+tr td {
+    border-right: 1px solid #000;
+}
+tr td:last-child {
+    border-right: none;
+}
+tr td {
+    border-bottom: 1px solid #000;
+}
+
 h1 {
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
     font-size: 30px;
 }
 
@@ -36,12 +61,8 @@ h2 {
 
 .h2-calculate {
     font-size: 25px;
-    margin: 18px 0;
-}
-
-.inside-container {
-    display: flex;
-    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 form label, form input, form button {
@@ -52,6 +73,10 @@ form label, form input, form button {
 form input, form button {
     margin-bottom: 10px;
     padding: 5px;
+}
+
+form input:focus {
+    border-color: var(--primary-color-darker);
 }
 
 form button {
